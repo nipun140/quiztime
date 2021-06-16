@@ -27,7 +27,6 @@ saveBtn.onclick = () => {
       names2dArr.push([inputName, score]);
       localStorage.setItem("leaderboard", JSON.stringify(names2dArr));
       window.location.assign("index.html");
-      return;
     }
   }
   return;
