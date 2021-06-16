@@ -1,0 +1,37 @@
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+
+input::placeholder {
+  font-family: "Nova Round", cursive;
+}
+
+input:focus {
+  outline: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+#savebtn {
+  border: none;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.fa-home {
+  font-size: inherit;
+  color: black;
+  margin-left: 0.5rem;
+}

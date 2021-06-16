@@ -1,0 +1,112 @@
+body {
+  color: #fff;
+}
+
+#game {
+  margin: 3rem 0;
+}
+
+.choice-container {
+  display: flex;
+  font-size: 2.5rem;
+  min-width: 60rem;
+  background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 10, 255) 100%);
+  margin-bottom: 1.4rem;
+  transition: transform 100ms;
+  border-radius: 1rem;
+}
+
+.choice-prefix {
+  padding: 1.8rem 2.5rem;
+  border-right: 0.2rem solid blue;
+}
+
+.choice-text {
+  padding: 1.8rem;
+  width: 100%;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.02);
+}
+
+.correct {
+  background: linear-gradient(
+    32deg,
+    rgb(11, 223, 36) 0%,
+    rgb(41, 232, 11) 100%
+  );
+}
+
+.incorrect {
+  background: linear-gradient(
+    32deg,
+    rgba(230, 29, 29, 1) 0%,
+    rgba(224, 11, 11, 1) 100%
+  );
+}
+
+#question {
+  font-size: 3rem;
+  align-self: start;
+  margin: 2rem 0;
+  max-width: 70rem;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-prefix {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-maintext {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: 0.2rem solid rgb(11, 223, 36);
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#progressBarFull {
+  width: 50%;
+  height: inherit;
+  border-radius: inherit;
+  transition: width 100ms;
+  background: linear-gradient(
+    32deg,
+    rgb(11, 223, 36) 0%,
+    rgb(41, 232, 11) 100%
+  );
+}
+
+@media screen and (max-width: 700px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .choice-container {
+    min-width: 30rem;
+  }
+}

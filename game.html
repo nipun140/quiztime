@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="game" class="flex-column ">
+            <!-- header  -->
+            <div id="header">
+                <div class="header-item">
+                    <p id="progressText" class="header-prefix">Question</p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="header-item">
+                    <p class="header-prefix">Score</p>
+                    <h1 class="header-maintext" id="score">0</h1>
+                </div>
+            </div>
+            <!-- question  -->
+            <p id="question">what is the Answer to this Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                tenetur aspernatur nesciunt??</p>
+            <!-- choices  -->
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <div class="choice-text" data-number="1">Choice1</div>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <div class="choice-text" data-number="2">Choice2</div>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <div class="choice-text" data-number="3">Choice3</div>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <div class="choice-text" data-number="4">Choice4</div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/game.js"></script>
+</body>
+
+</html>
